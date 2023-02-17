@@ -14,7 +14,7 @@ bool checkPrime(uint64_t value) {
 
 uint64_t nPrime(uint64_t n) {
   if (n == 2)  return 1;
-  uint64_t n_i = 1;					//n_i счётчик простых чисел
+  uint64_t n_i = 1;
   for (uint64_t x = 3;; x += 2) {
     if (checkPrime(x) == true) n_i++;
     if (n_i == n)  return x;
